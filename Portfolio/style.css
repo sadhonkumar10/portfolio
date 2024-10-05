@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: rgb(24, 23, 23);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 2px solid gray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+   
+}
+.nav-left h1{
+    font-size: 20px;
+}
+.nav-left h1 span{
+    color: turquoise;
+    text-shadow: 5px 5px 5px rgb(12, 125, 114);
+}
+.nav-right{
+    display: none;
+}
+.nav-manu-ber{
+    font-size: 25px;
+}
+.header-img{
+    height: 300px;
+    width: 300px;
+    background-color: turquoise;
+    margin: 30px auto;
+    border-radius: 50%;
+    border: 2px solid gray;
+    text-align: center;
+}
+header{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+.header-img img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+   
+}
+.header-text{
+    padding: 20px;
+    text-align: center;
+}
+.header-text h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.header-text h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+    
+}
+.header-text h3{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.header-text span{
+    color: turquoise;
+    text-shadow: 5px 5px 5px rgb(12, 125, 114);
+
+}
+ .header-text p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+
+}
+.header-link{
+    padding: 20px;
+
+}
+.header-link a i{
+    font-size: 40px;
+    padding-left: 20px;
+    color: turquoise;
+    box-shadow: 5px 5px 5px turquoise;
+    
+}
+.header-bnt button{
+    background-color: turquoise;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px 2px turquoise;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.header-bnt button:hover{
+    background-color: transparent;
+    transition: 1s;
+}
+.about-img{
+    height: 300px;
+    width: 300px;
+    background-color: turquoise;
+    margin: 30px auto;
+   border-radius: 20px;
+}
+.about-img img{
+    height: 300px;
+    width: 300px;
+}
+.about-text{
+    padding: 20px;
+   
+}
+.about-text h3{
+    font-size: 25px;
+    color: turquoise;
+    padding: 10px 0px;
+}
+.about-text p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    padding-bottom: 20px;
+
+}
+.about-text p span{
+    color: turquoise;
+    
+}
+.about-bnt button{
+    background-color: turquoise;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px 2px turquoise;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.about-bnt button:hover{
+    background-color: transparent;
+    transition: 1s;
+
+}
+.my-sarvice{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: space-between; */
+}
+.sarvice h2 span{
+    color: turquoise;
+    text-decoration: underline;
+}
+.sarvice h2{
+    padding-left: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.sarvice-card{
+    
+    width: 400px;
+    background-color:black;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    border-left: 5px solid white;
+    box-shadow: 5px 5px 5px gray;
+}
+.sarvice-card-icon{
+    padding: 20px;
+
+}
+.sarvice-card-icon i{
+    font-size: 80px;
+}
+.sarvice-card-icon button{
+    background-color:turquoise;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 2px 2px turquoise;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.sarvice-card-icon h2{
+    padding-bottom: 10px;
+    color: black;
+}
+.sarvice-card-icon p{
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    padding-bottom: 20px;
+
+
+}
+
+
+.protfolio{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    
+}
+.protfolio-card{
+    width: 300px;
+    background-color:black;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    transition: 0.1s;
+
+}
+.protfolio-card:hover{
+    border-left: 5px solid teal;
+
+
+}
+.protfolio-card .protfolio-img img{
+    height: 200px;
+    width: 280px;
+    border-radius: 20px;
+}
+.protfolio-img{
+    padding-top: 10px;
+}
+.protfolio-img h2{
+    font-size: 30px;
+
+}
+.protfolio-img p{
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding: 10px 10px;
+
+}
+.my-protfolio .bnt{
+    text-align: center;
+    
+}
+.my-protfolio .bnt button{
+    padding: 10px 20px;
+    background-color: turquoise;
+    border-radius: 20px;
+
+}
+
+.language{
+    padding-bottom: 40px;
+   
+    text-align: start;
+    padding-top: 20px;
+}
+.language a{
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    
+    background-color: gray;
+}
+.my-protfolio{
+    padding-bottom: 40px;
+    
+}
+.my-protfolio h3{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.my-protfolio span{
+    color: turquoise;
+    text-decoration: underline;
+
+}
+.my-skill{
+    padding-top: 30px;
+    
+}
+.skill{
+    background-color: rgb(40, 39, 39);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    padding-bottom: 40px;
+    
+    
+}
+.skill-prograss{
+    text-align: center;
+}
+.skill-prograss progress{
+    width: 70%;
+    height: 15px;
+    
+}
+.skill-prograss label{
+    font-size: 25px;
+
+}
+.skill h2{
+    padding: 20px;
+    font-size: 30px;
+
+}
+.skill h2 span{
+    color: turquoise;
+}
+.skill-prograss span{
+    padding: 8px;
+    background-color:rgb(198, 240, 114);
+    font-size: 10px;
+    border-radius: 50%;
+    position: relative;
+    color: black;
+    border: 4px solid yellow;
+    text-align: center;
+    bottom: 3px;
+}
+
+form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+.contact{
+    background-color: rgb(40, 39, 39);
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+    padding-top: 40px;
+    
+    
+}
+.contact-img{
+    display: none;
+}
+.contact .name{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    
+}
+.contact .text-area textarea{
+    width: 250px;
+    height: 80px;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid gray;
+}
+.contact .text-area{
+    text-align: center;
+    padding: 20px 0;
+}
+.contact .name input{
+    font-size: 15px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid gray;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+}
+.contact  .name{
+    text-align: center;
+}
+.contact h2{
+    text-align: center;
+    padding: 20px;
+    color: turquoise;
+}
+.contact-bnt{
+    text-align: center;
+    padding: 20px;
+}
+.contact-bnt button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+}
+.contact-bnt button:hover{
+    background-color: transparent;
+    transition: 1s;
+    color: white;
+}
+
+
+footer{
+    text-align: center;
+    padding: 40px 0;
+    background-color: teal;
+    width: 100%;
+}
+footer h1{
+    font-size: 25px;
+}
+footer h1 span{
+    color: turquoise;
+}
+footer .header-link i{
+    font-size: 20px;
+}
+@media(min-width:700px) {
+    .nav-right{
+        display: block;
+    }
+    .nav-manu-ber{
+        display: none;
+    }
+    .nav-right ul li{
+        display: inline-block;
+       
+    }
+    .nav-right ul li a{
+        padding-right: 20px;
+    }
+    .nav-right ul li a:hover{
+       text-decoration: underline;
+        transition: .5s;
+        color: turquoise;
+     }
+     .my-sarvice{
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+     .protfolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+     }
+     .my-protfolio{
+        padding: 0px 40px;
+       
+        
+     }
+       
+    
+     header{
+        display: flex;
+        gap: 40px;
+        padding: 100px 60px;
+        flex-direction: row-reverse;
+     }
+     
+    .about{
+       display: flex;
+       gap: 40px;
+       padding: 60px 60px;
+       align-items: center;
+    }
+   
+
+
+}
+@media (min-width:1024px) {
+    .nav-left h1{
+        font-size: 30px;
+    }
+    .nav-right ul li a{
+        font-size: 25px;
+        padding-right: 20px;
+    }
+    header{
+        margin: 0 100px;
+        gap: 80px;
+
+    }
+    .about{
+        margin: 0 100px;
+        gap: 80px;
+
+    }
+    .sarvice{
+        margin: 0 150px;
+        
+    }
+    .protfolio{
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+     }
+    .my-protfolio{
+        margin: 0 150px;
+    }
+    .protfolio-img{
+        gap: 20px;
+        display: flex;
+        gap: 20px;
+     }
+     .protfolio-card{
+        width: 70vw;
+     }
+    
+   
+    
+    .contact-img{
+        display: block;
+        
+    }
+    .contact-info{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+       
+        
+    }
+    .contact-img img{
+        height: 400px;
+        width: 400px;
+    }
+    .contact-form{
+        width: 50vw;
+    }
+    .contact h2{
+            padding-bottom: 100px;
+            font-size: 40px;
+            text-decoration: underline;
+            
+    }
+    .contact-form .name input{
+        padding-right: 50px;
+        padding: 20px 30px;
+    }
+    .contact .name{
+        flex-direction: row;
+    }   
+}   
